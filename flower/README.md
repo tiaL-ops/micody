@@ -1,18 +1,18 @@
 
-# 🌸 Click-A-Flower
+## 🌸 Click-A-Flower
 
-A simple and cute `three.js` project where you can click on the screen to make colorful flowers bloom. This is a minimal starter project for anyone new to 3D on the web. Click anywhere and watch a flower grow\!
+A first three.js project. Just click anywhere to make some flowers bloom :) 
 
-![Click-A-Flower Demo](/clickaflo.gif)
+![Click-A-Flower Demo](flower/clickaflo.gif)
 
-## Tech Stack
+### Tech Stack
 
   * **Three.js:** For all the 3D rendering and magic\! ✨
   * **Vite:** A super-fast tool to run a local development server.
 
------
 
-## How to Run It
+
+### How to Run It
 
 To get this running on your computer, you'll need [Node.js](https://nodejs.org/en) installed. Then, follow these steps in your terminal:
 
@@ -37,9 +37,9 @@ To get this running on your computer, you'll need [Node.js](https://nodejs.org/e
 
 4.  **Open in your browser:** Your terminal will show you a local URL (usually `http://localhost:5173`). Open that link in your browser and start clicking\!
 
------
 
-## Your Turn\!
+
+### Your Turn\!
 
 This project is a sandbox for you to play in. Try making some changes\!
 
