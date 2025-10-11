@@ -3,7 +3,7 @@
 
 A first three.js project. Just click anywhere to make some flowers bloom :) 
 
-![Click-A-Flower Demo](flower/clickaflo.gif)
+![Click-A-Flower Demo](clickaflo.gif)
 
 ### Tech Stack
 
