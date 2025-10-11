@@ -3,7 +3,7 @@
 
 A simple and cute `three.js` project where you can click on the screen to make colorful flowers bloom. This is a minimal starter project for anyone new to 3D on the web. Click anywhere and watch a flower grow\!
 
-[A GIF of colorful spheres blooming on a dark background]
+![Click-A-Flower Demo](/clickaflo.gif)
 
 ## Tech Stack
 

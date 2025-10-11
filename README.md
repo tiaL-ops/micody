@@ -1,9 +1,15 @@
-### Small descri
-This repo is putting smlal project doing for fun without any pressure of prod , mostly just to practice, and enjoy. It is also part of "detoxEpisode" on tiktok where I try weekly to make a small , cute nice project.
 
-Goal is have fun and no AI :) ( for this one :D)
+### Small Description
 
-# Project
+This repo is a cozy little space for small, fun projects — no pressure, no production stress, just practice ^^
 
-### Project 1 : 
-Gardening flower
+It’s also part of my **“detoxEpisode”** series on TikTok, where each week I make a small, to show how I learn new things  joy and learning.
+
+The main goal? **Build , have fun and try take a  small break from AI** (just for this one :D ).
+
+---
+
+### Project 1:
+
+🌸 **Gardening Flower**
+
