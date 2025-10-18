@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiCoDy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            background-color: #000000;
+            color: #E0E0E0;
+        }
+        /* Animation for the cards popping in */
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.1) translate(var(--start-x), var(--start-y));
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translate(0, 0);
+            }
+        }
+        .card-animate {
+            animation: popIn 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="text-center py-12 px-4">
+        <h1 class="text-5xl md:text-6xl mb-2 text-white">
+            Micody Wall
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            Welcome to your first contribution!
+        </p>
+        <p class="mt-4 text-gray-500 text-lg">
+            To add your profile, follow the instructions in the <code class="bg-gray-800 text-sm rounded px-2 py-1">CONTRIBUTING.md</code> file.
+        </p>
+    </header>
+
+    <!-- Coder Wall Grid -->
+    <main class="container mx-auto px-4 pb-16">
+        <div id="coder-wall" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+            <!-- Coder profiles will be dynamically inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <script>
+        // --- Beginner Contribution Area ---
+        // To contribute, add your profile object to this 'contributors' array.
+        // Your avatar will be generated automatically from your name!
+        const contributors = [
+            {
+                name: "Landy Tia",
+                passion: "I love ramen and dumplings"
+            },
+            {
+                name: "Someone else",
+                passion: "Liking some nice stuff"
+            },
+            // V-- ADD YOUR PROFILE OBJECT BELOW THIS LINE --V
+            
+            
+            // ^-- ADD YOUR PROFILE OBJECT ABOVE THIS LINE --^
+        ];
+        // --- End of Contribution Area ---
+
+
+        // --- Script to build the wall ---
+        // (No need to edit below this line)
+        document.addEventListener('DOMContentLoaded', () => {
+            const coderWall = document.getElementById('coder-wall');
+            if (!coderWall) return;
+
+            coderWall.innerHTML = ''; 
+
+            // Create a card for each contributor with an animation
+            contributors.forEach((contributor, index) => {
+                const card = document.createElement('div');
+                // Base styles for the card
+                card.className = 'bg-black border border-gray-700 rounded-none p-6 flex flex-col items-center text-center';
+                // Make it invisible until animation starts
+                card.style.opacity = 0; 
+                // Add the animation class
+                card.classList.add('card-animate');
+
+                // Randomize starting position for the "fly-in" effect
+                const startX = (Math.random() - 0.5) * 500; // Random horizontal offset
+                const startY = (Math.random() - 0.5) * 500; // Random vertical offset
+                card.style.setProperty('--start-x', `${startX}px`);
+                card.style.setProperty('--start-y', `${startY}px`);
+                
+                // Stagger the animation for each card
+                card.style.animationDelay = `${index * 100}ms`;
+                
+                // Automatically generate a unique "pixel-art" style avatar
+                const avatarSrc = `https://api.dicebear.com/8.x/pixel-art/svg?seed=${encodeURIComponent(contributor.name)}`;
+
+                card.innerHTML = `
+                    <div class="w-24 h-24 p-1 bg-black border-2 border-gray-500">
+                        <img 
+                            src="${avatarSrc}" 
+                            alt="Avatar of ${contributor.name}" 
+                            class="w-full h-full object-cover bg-gray-800"
+                        >
+                    </div>
+                    <h3 class="text-2xl text-white mt-4">${contributor.name}</h3>
+                    <p class="text-gray-400 mt-2 text-lg">${contributor.passion}</p>
+                `;
+                coderWall.appendChild(card);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
