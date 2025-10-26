@@ -13,6 +13,7 @@ export default function billy(character) {
         const p = Math.min(1, t);
         // Loop to continue the movement indefinitely for the duration
         const loopTime = t * Math.PI * 2;
+        character.position.y = 0.9
 
         // Arms swinging opposite each other
         parts.rightUpper.rotation.x = Math.sin(loopTime) * amplitude;
@@ -24,6 +25,7 @@ export default function billy(character) {
             // Reset positions at the end
             parts.rightUpper.rotation.x = 0;
             parts.leftUpper.rotation.x = 0;
+            character.position.y = 0.9
         }
     }
     raf = requestAnimationFrame(animate);

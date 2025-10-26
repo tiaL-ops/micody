@@ -16,7 +16,7 @@ export default function oelan(character) {
 
     // rotation et position du corps
     character.rotation.x = -Math.PI*2*p;
-    character.position.y = 0.3*Math.sin(p*Math.PI);
+    character.position.y = 0.9 + 0.3*Math.sin(p*Math.PI);
 
     // en esperant que je retombe sur mes deux jambes
     if (parts) {
@@ -31,7 +31,7 @@ export default function oelan(character) {
     }
 
     if (t<1) raf = requestAnimationFrame(animate);
-    else { character.rotation.set(0,0,0); character.position.y=0; }
+    else { character.rotation.set(0,0,0); character.position.y=0.9; }
   }
   // hop lààà
   raf = requestAnimationFrame(animate);
