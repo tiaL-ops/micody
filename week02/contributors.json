@@ -1,13 +1,17 @@
 [
-    {
-        "name": "Landy Tia",
-        "moveFile": "landy.js",
-        "duration": 1500
-      },
-      {
-        "name": "Rasoa Rakotonirina",
-        "moveFile": "rasoa.js",
-        "duration": 2500
-      }
- 
+	{
+		"name": "Landy Tia",
+		"moveFile": "landy.js",
+		"duration": 1500
+	},
+	{
+		"name": "Rasoa Rakotonirina",
+		"moveFile": "rasoa.js",
+		"duration": 2500
+	},
+	{
+		"name": "Rayane",
+		"moveFile": "rayane.js",
+		"duration": 3000
+	}
 ]

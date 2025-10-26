@@ -22,13 +22,13 @@ export default function rasoa(character) {
       }
   
       // Add a little bounce
-      character.position.y = Math.sin(p * Math.PI * 4) * 0.05;
+      character.position.y = 0.9 + Math.sin(p * Math.PI * 4) * 0.05;
   
       if (p < 1) raf = requestAnimationFrame(animate);
       else {
         // Reset orientation at end
         character.rotation.set(0, 0, 0);
-        character.position.y = 0;
+        character.position.y = 0.9;
       }
     }
   

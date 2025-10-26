@@ -47,7 +47,7 @@ class DanceSequence {
 
         // Camera
         this.camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
-        this.camera.position.set(0, 2.2, 5);
+        this.camera.position.set(0, 5.2, 5);
 
         // Renderer
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: false });
@@ -273,7 +273,7 @@ class DanceSequence {
           m.castShadow = true;
         });
       
-        this.character.position.set(0, 0, 0);
+        this.character.position.set(0, 0.9, 0);
         this.scene.add(this.character);
       }
       
@@ -529,7 +529,7 @@ class DanceSequence {
         const t = Date.now() * 0.0002;
         this.camera.position.x = Math.sin(t) * 2;
         this.camera.position.z = 4 + Math.cos(t) * 0.5;
-        this.camera.lookAt(new THREE.Vector3(0, 0.8, 0));
+        this.camera.lookAt(this.character.position);
 
         this.renderer.render(this.scene, this.camera);
     }
