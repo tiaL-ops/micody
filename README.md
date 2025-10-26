@@ -13,8 +13,8 @@ Welcome! This is a fun space to make small contributions—just for the joy of c
 
 **Mission:** Add your move to the 3D avatar and make it dance!
 
-
-**Full instructions for all weeks are in [`CONTRIBUTING.md`](CONTRIBUTING.md).**
+     
+**Full instructions for all weeks are in [`contributing.md`](contributing.md).**
 
 Like always, have funnn!
 
