@@ -1,11 +1,20 @@
-### Contribution Playground 👾
 
-This repo is a space for people to make small contributions... just for fun and for the sake of coding :)
 
-#### Week 1: Micody Wall
+## Contribution Playground 👾
 
-Mission: Add your name and passion to the wall!
+Welcome! This is a fun space to make small contributions—just for the joy of coding.
 
-How-To: Full instructions are in the CONTRIBUTING.md file.
 
-Have fun :)
+#### Week 1: Micody Wall 
+
+**Mission:** Add your name and passion to the wall!
+
+#### Week 2: Let’s Dance! 
+
+**Mission:** Add your move to the 3D avatar and make it dance!
+
+
+**Full instructions for all weeks are in [`CONTRIBUTING.md`](CONTRIBUTING.md).**
+
+Like always, have funnn!
+

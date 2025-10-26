@@ -1,0 +1,264 @@
+/* --- Simple, Clean Learning Stylesheet --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #5a67d8;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #4a5568;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* --- Tasks Section --- */
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.task h2 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+}
+
+.task p {
+  color: #4a5568;
+  margin: 0 0 1rem 0;
+}
+
+code {
+  background: #edf2f7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #d53f8c;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.code-example {
+  background: #2d3748;
+  color: #a0aec0;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.code-example pre {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #68d391;
+}
+
+/* --- Pet Area --- */
+.pet-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dog-gif {
+  width: 250px;
+  height: 250px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.bowl-area {
+  text-align: center;
+}
+
+#food-canvas {
+  background-color: #ffffff;
+  border: 3px solid #cbd5e0;
+  border-radius: 8px 8px 50% 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --- Fullness Meter --- */
+.fullness-container {
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+#fullness-label {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 0.8rem;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.fullness-bar-outline {
+  width: 100%;
+  height: 24px;
+  background-color: #e2e8f0;
+  border-radius: 12px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+#fullness-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+  border-radius: 8px;
+  transition: width 0.4s ease-out;
+}
+
+.hunger-message {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hunger-message.hungry {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.hunger-message.medium {
+  background: #feebc8;
+  color: #c05621;
+}
+
+.hunger-message.satisfied {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.hunger-message.full {
+  background: #bee3f8;
+  color: #2c5282;
+}
+
+/* --- Food Gallery --- */
+.food-gallery {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.food-gallery h2 {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #5a67d8;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+#food-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.food-card {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.food-card.good-food {
+  background: #c6f6d5;
+  border-color: #48bb78;
+}
+
+.food-card.bad-food {
+  background: #fed7d7;
+  border-color: #f56565;
+}
+
+.food-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.food-name {
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+}
+
+.food-status {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.good-food .food-status {
+  color: #22543d;
+}
+
+.bad-food .food-status {
+  color: #c53030;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .tasks {
+    grid-template-columns: 1fr;
+  }
+  
+  .dog-gif {
+    width: 180px;
+    height: 180px;
+  }
+}
