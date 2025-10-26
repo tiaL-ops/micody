@@ -9,10 +9,16 @@
         "moveFile": "rasoa.js",
         "duration": 2500
       },
+    
       {
         "name": "Billy Harena",
         "moveFile": "billy.js",
         "duration": 2500
+      },
+    {
+        "name" : "Oëlan Riandy",
+        "moveFile": "oelan.js",
+        "duration": 1500
       }
  
 ]
