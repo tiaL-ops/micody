@@ -11,7 +11,7 @@ export default function landy(character) {
       const p = Math.min(1, t);
   
       // Jump up, then land down (using sine curve)
-      character.position.y = Math.sin(p * Math.PI) * 0.4;
+      character.position.y = 0.9 + Math.sin(p * Math.PI) * 0.4;
   
       // Arms swing during jump
       parts.leftUpper.rotation.x = -Math.sin(p * Math.PI) * 0.6;
@@ -22,7 +22,7 @@ export default function landy(character) {
       parts.rightUpperLeg.rotation.x = -0.2 * Math.sin(p * Math.PI);
   
       if (p < 1) raf = requestAnimationFrame(animate);
-      else character.position.y = 0; // reset at end
+      else character.position.y = 0.9; // reset at end
     }
   
     raf = requestAnimationFrame(animate);
