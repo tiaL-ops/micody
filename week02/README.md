@@ -55,7 +55,7 @@ To run locally:
 
 ### Good First Issues
 
-- [ ] Add your move function
+- [ ] Add your move function ( SHould be less than 35 lines of codes)
 - [ ] Add your info to `contributors.json`
 - [ ] Create a unique dance move
 
