@@ -8,6 +8,11 @@
         "name": "Rasoa Rakotonirina",
         "moveFile": "rasoa.js",
         "duration": 2500
+      },
+      {
+        "name" : "Oëlan Riandy",
+        "moveFile": "oelan.js",
+        "duration": 1500
       }
  
 ]
