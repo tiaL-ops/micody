@@ -23,5 +23,10 @@
     "name": "Oëlan Riandy",
     "moveFile": "oelan.js",
     "duration": 1500
+  },
+  {
+    "name": "Micael Jerry",
+    "moveFile": "jerry.js",
+    "duration": 2500
   }
 ]
