@@ -40,6 +40,7 @@ Navigate into the project directory:
 ```bash
 cd week01
 ```
+(Or any week that you want to contribute!)
 
 Now, create a new branch for your changes. It’s good practice to name your branch something descriptive, like `add-your-name`:
 
