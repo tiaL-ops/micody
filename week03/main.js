@@ -27,6 +27,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultContainer = document.getElementById('result');
     const nameInput = document.getElementById('crushName');
 
+    const ourSecret = document.getElementById("ourSecret");
+    let typingTimer;
+
+    // Listens for keystrokes to detect when the user stops typing, triggering the doneTyping timer.
+    nameInput.addEventListener("keyup", function(event) {
+        const inputValue = event.target.value;
+        clearTimeout(typingTimer);
+        // if the inputValue is not empty, triggering the doneTyping
+        if (inputValue.trim() !== "") typingTimer = setTimeout(doneTyping, 500);
+        else ourSecret.innerHTML = "";
+    });
+    // This function is calling when the user stops typing in the input during 500ms
+    function doneTyping() {
+        const content = `
+                <p>
+                    Ce sera entre nous t'inquiètes !
+                </p>
+                <img src="gif/our_secret.gif">
+            `;
+        ourSecret.innerHTML = content;
+    }
+
+
     // Fonction pour générer le quiz
     function buildQuiz() {
         let output = [];

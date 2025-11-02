@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(204, 27, 157);
+}
+
+/* Center the div */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+/* Make the input radio horizontaly */
+.options {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#submitBtn {
+    width: 50%;
+    margin: 0 25%;
+}
+
+#result {
+    margin: 10px auto;
+}
+
+#ourSecret {
+    margin-top: 5px;
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
