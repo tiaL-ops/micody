@@ -18,5 +18,7 @@ Ici, du coup, écris les *features* que tu as faites avec ton nom :
 
 -   Fait la logique et `index.html` : Landy Rakotoarison
 -   Ajouté un GIF à la question 10 : \---- (exemple :D)
+-   Ajouter un minimum de style : Billy Harena
+-   Ajouter un message à l'entrée d'un nom pour le champ "crushName" : Billy Harena
 
 **Do not change the question and logic, change the charisma :)**
