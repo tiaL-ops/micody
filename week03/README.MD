@@ -1,4 +1,4 @@
-## WEEK 03: Freestly!!  (aussi parce que je suis débordé un peu là, tu vois)
+## WEEK 03: Freestyle!!  (aussi parce que je suis débordé un peu là, tu vois)
 
 En gros, ce site sera un site web pour que les personnes voient si elles sont *in love* d'une autre personne. (scientifiquement prouvé, là, tu vois le genre haha)
 
