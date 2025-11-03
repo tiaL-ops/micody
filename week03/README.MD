@@ -1,12 +1,14 @@
 ## WEEK 03: Freestyle!!  (aussi parce que je suis débordé un peu là, tu vois)
 
+## *UPDATE* Add a gif meme!
+
+
 En gros, ce site sera un site web pour que les personnes voient si elles sont *in love* d'une autre personne. (scientifiquement prouvé, :D)
 
-Il marche, mais il est **moche** et *boring*,... so... this week is to make things funnier.
 
 ### What can you do
 -----
-Bon, avant de juste mettre "rend ça plus joli" sur ChatGPT et qu'il donne le CSS, le *goal*, c'est vraiment d'être créatif. Genre, vous voulez mettre un GIF, un meme à côté, d'une question, un son, une explosion quand la personne n'aime personne, ou je sais pas, une barre de score qui monte comme une fusée... IDKKK...
+ADD YOUR GIFF!
 
 ![Funny Coding GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTllamY2czNzYmZyem1qdTdpanR4azR6Nncwb29rd2o2Mm10aTdmbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QIiqoufLNmWo8/giphy.gif)
 
@@ -14,11 +16,24 @@ Je ferai une vidéo dessus aussi sur mon TikTok dans 7 jours , so si tu contribu
 
 ### 🥳 Contributing
 -----
-Ici, du coup, écris les *features* que tu as faites avec ton nom :
+Ici, du coup, écris les GIF que tu as ajoute !:
 
--   Fait la logique et `index.html` : Landy Rakotoarison
--   Ajouté un GIF à la question 10 : \---- (exemple :D)
+Eg: 
+-   Ajouté un GIF à la question 1 : whiguyblink.gif
+-   Ajouté un GIF à la question 10 : 
+
+
+
+
+
+----
+Si tu veux modifier *les features*, make it CRAZIER/Prettier? Feel free!
+Ajoute ici:
+
+-   Logique et `index.html` : Landy Rakotoarison
 -   Ajouter un minimum de style : Billy Harena
 -   Ajouter un message à l'entrée d'un nom pour le champ "crushName" : Billy Harena
+- Ajouter beaucoup de style : Copilot :p 
+- 
 
 **Do not change the question and logic, change the charisma :)**

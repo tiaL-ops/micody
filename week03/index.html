@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crush, Habitude ou Love?</title>
+    <title>Crush, Habitude ou Love? - Meme Edition!</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Crush, Habitude ou Love?</h1>
-        <p class="subtitle">Sur une échelle de 1 à 9, tu l'aimes à quel point ?</p>
-        <p>Quiz inspire de Hatfield, Elaine, and Susan Sprecher. "Measuring passionate love in intimate relationships." Journal of adolescence 9.4 (1986): 383-410.
-</p>
+    <div class="container meme-container">
+        <h1 class="main-title glitch">Crush, Habitude ou Love?</h1>
+        <p class="subtitle bounce">Sur une échelle de 1 à 9, tu l'aimes à quel point ?</p>
+        <p class="tiny-text shake">Quiz inspiré de Hatfield, Elaine, and Susan Sprecher. "Measuring passionate love in intimate relationships." Journal of adolescence 9.4 (1986): 383-410.</p>
 
-        <div class="name-input">
-            <label for="crushName">Mets le nom de ta personne spéciale ici :</label>
-            <input type="text" id="crushName" placeholder="Nom...">
-            <!-- This div is used to add a little message if the user enter a name ^-^ -->
-            <div id="ourSecret"></div>
+        <div class="name-input wobble">
+            <label for="crushName" class="label-meme">Mets le nom de ta personne spéciale ici :</label>
+            <input type="text" id="crushName" placeholder="Nom..." class="input-meme">
+            <div id="ourSecret" class="our-secret-gif"></div>
         </div>
 
-        <div id="quiz-container"></div>
+        <div id="quiz-container" class="quiz-questions"></div>
 
-        <button id="submitBtn">Calculer le score !</button>
+        <button id="submitBtn" class="submit-button pulse">Calculer le score!</button>
 
-        <div id="result"></div>
+        <div id="result" class="result-box"></div>
 
-      
+        <div class="open-source-note">
+            <p>
+                Psst! C'est un projet open-source. <br>
+                Tu veux ajouter ton propre mème ? Fork le projet sur GitHub et ajoute ton URL dans `main.js` dans la section "CONTRIBUTION ZONE" !
+            </p>
+            <p>Shoutout to : 
+                - Billy Harena
+            </p>
+        </div>
     </div>
+
+    <!-- Meme Popup Modal -->
+    <div id="meme-popup" class="meme-popup">
+        <button class="close-meme">X</button>
+        <img src="" alt="Meme Result" class="meme-img">
+    </div>
+
 
     <script src="main.js"></script>
 </body>

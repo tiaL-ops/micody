@@ -13,6 +13,10 @@ Welcome! This is a fun space to make small contributions—just for the joy of c
 
 **Mission:** Add your move to the 3D avatar and make it dance!
 
+#### Week 3: Add your meme. 
+
+**Mission:** Add your meme to the love question.
+
      
 **Full instructions for all weeks are in [`contributing.md`](contributing.md).**
 
