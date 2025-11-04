@@ -35,6 +35,7 @@ Ajoute ici:
 -   Ajouter un minimum de style : Billy Harena
 -   Ajouter un message à l'entrée d'un nom pour le champ "crushName" : Billy Harena
 - Ajouter beaucoup de style : Copilot :p 
-- 
+-   Ajouter un GIF à la question 14 : Billy Harena
+-   Remplacer les inputs radio par input range : Billy Harena ft GPT(surtout pour le style _ToT_)
 
 **Do not change the question and logic, change the charisma :)**

@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //
     const questionGifs = {
         1: 'whiguyblink.gif',  // Question 2 - Example GIF
+        13: 'attraction.gif',
         
         // ADD YOUR GIFS BELOW:
         // 0: 'yourgif.gif',   // Question 1
@@ -101,15 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
         let output = [];
 
         questions.forEach((currentQuestion, questionNumber) => {
-            let options = '';
-            for (let i = 1; i <= 9; i++) {
-                options += `
-                    <div>
-                        <input type="radio" id="q${questionNumber}-opt${i}" name="question${questionNumber}" value="${i}">
-                        <label for="q${questionNumber}-opt${i}">${i}</label>
+            const rangeInput = `
+                    <div class="range-controls">
+                        <input 
+                            type="range" 
+                            id="q${questionNumber}" 
+                            name="question${questionNumber}" 
+                            min="1" max="9" value="1" step="1" 
+                            class="range-meme" 
+                            data-question-number="${questionNumber}">
+                        <div class="range-value-display">
+                            <span class="current-value" id="q${questionNumber}-value">1</span>
+                        </div>
                     </div>
-                `;
-            }
+            `;
 
             // Check if there's a GIF for this question
             let gifHTML = '';
@@ -126,11 +132,30 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${currentQuestion.part2}
                     </p>
                     ${gifHTML}
-                    <div class="options">${options}</div>
+                    <div class="options">${rangeInput}</div>
                 </div>`
             );
         });
         quizContainer.innerHTML = output.join('');
+        attachRangeListeners();
+    }
+
+    // Manage cursos value display
+    function attachRangeListeners() {
+        const rangeInputs = document.querySelectorAll('.range-meme');
+        rangeInputs.forEach(input => {
+            const updateDisplay = () => {
+                const value = input.value;
+                document.getElementById(`q${input.dataset.questionNumber}-value`).textContent = value;
+                
+                const scaleValue = 1 + (value / 9) * 0.5;
+                input.style.setProperty('--heart-scale', scaleValue);
+            };
+
+            input.addEventListener('input', updateDisplay);
+            
+            updateDisplay(); 
+        });
     }
 
     function updateNameInQuestions() {
@@ -166,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showResults() {
         let totalScore = 0;
-        let allAnswered = true;
+        // let allAnswered = true;
         const crushName = nameInput.value || "Cette personne";
 
         if (nameInput.value.trim() === "") {
@@ -176,20 +201,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         questions.forEach((_, questionNumber) => {
-            const selector = `input[name="question${questionNumber}"]:checked`;
+            const selector = `input[name="question${questionNumber}"]`;
             const userAnswer = (quizContainer.querySelector(selector) || {}).value;
 
-            if (userAnswer) {
+            // if (userAnswer !== "0") {
                 totalScore += parseInt(userAnswer);
-            } else {
-                allAnswered = false;
-            }
+            // } else {
+            //     allAnswered = false;
+            // }
         });
 
-        if (!allAnswered) {
-            alert("Oops ! Tu dois répondre à toutes les questions.");
-            return;
-        }
+        // if (!allAnswered) {
+        //     alert("Oops ! Tu dois répondre à toutes les questions.");
+        //     return;
+        // }
 
         let message = '';
         let selectedMemeUrl = memeBank.default;
