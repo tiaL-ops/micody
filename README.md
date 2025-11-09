@@ -3,7 +3,7 @@
 ## Contribution Playground 👾
 
 Welcome! This is a fun space to make small contributions—just for the joy of coding.
-
+Will do un til week 04 to see how it goes then may switch another way of contribuiton
 
 #### Week 1: Micody Wall 
 

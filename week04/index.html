@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposter Word Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Setup Screen -->
+        <div id="setupScreen" class="screen active">
+            <h1>IMPOSTER WORD GAME</h1>
+            <div class="rules">
+                <h2>Rules:</h2>
+                <p>• Choose 3-6 players (you + bots)</p>
+                <p>• One player is secretly the IMPOSTER</p>
+                <p>• Innocents know the secret word and give related words</p>
+                <p>• The imposter doesn't know it and must blend in</p>
+                <p>• After 4 rounds, vote who you think is the imposter!</p>
+            </div>
+            
+            <div class="player-select">
+                <label for="playerCount">Number of Players:</label>
+                <select id="playerCount">
+                    <option value="3">3 Players</option>
+                    <option value="4">4 Players</option>
+                    <option value="5">5 Players</option>
+                    <option value="6">6 Players</option>
+                </select>
+            </div>
+            
+            <button class="btn" onclick="startGame()">START GAME</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="header">
+                <h2 id="roundNumber">ROUND 1</h2>
+                <div id="roleDisplay" class="role-display"></div>
+            </div>
+
+            <div id="playersContainer" class="players-container"></div>
+
+            <div class="input-section">
+                <div id="usedWords" class="used-words"></div>
+                <input type="text" id="wordInput" placeholder="Enter your word..." autocomplete="off">
+                <button class="btn" onclick="submitWord()">SUBMIT</button>
+            </div>
+
+            <button class="btn-secondary" onclick="continueGame()">CONTINUE</button>
+        </div>
+
+        <!-- Voting Screen -->
+        <div id="votingScreen" class="screen">
+            <h2>VOTING PHASE</h2>
+            <p>Who do you think is the imposter?</p>
+            
+            <div id="votingPlayers" class="players-container"></div>
+            
+            <button class="btn" onclick="submitVote()">SUBMIT VOTE</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <h2 id="resultTitle">GAME OVER</h2>
+            
+            <div id="imposterReveal" class="imposter-reveal"></div>
+            
+            <div id="allWords" class="all-words"></div>
+            
+            <button class="btn" onclick="restartGame()">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
