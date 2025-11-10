@@ -17,8 +17,13 @@ Will do un til week 04 to see how it goes then may switch another way of contrib
 
 **Mission:** Add your meme to the love question.
 
+#### Week 4: Imposter game. 
+
+**Mission:** add more design
+
      
-**Full instructions for all weeks are in [`contributing.md`](contributing.md).**
+**Full instructions for each week are in readme of that week.**
+
 
 Like always, have funnn!
 
