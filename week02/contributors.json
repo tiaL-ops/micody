@@ -28,5 +28,10 @@
     "name": "Micael Jerry",
     "moveFile": "jerry.js",
     "duration": 2500
+  },
+  {
+    "name": "CHAN HIOU KONG Stéphane",
+    "moveFile": "stephane.js",
+    "duration": 3000
   }
 ]
